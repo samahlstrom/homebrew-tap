@@ -5,20 +5,20 @@
 class Forge < Formula
   desc "Agent harness scaffolding for Claude Code"
   homepage "https://github.com/samahlstrom/forge-cli"
-  version "0.2.26"
+  version "0.2.27"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/samahlstrom/forge-cli/releases/download/v0.2.26/forge_0.2.26_darwin_amd64.tar.gz"
-      sha256 "e6214b67f09b1de2a3643cbea66ab670b0a66844c08fa9da941f8f7e2bcf474c"
+      url "https://github.com/samahlstrom/forge-cli/releases/download/v0.2.27/forge_0.2.27_darwin_amd64.tar.gz"
+      sha256 "473bd25715c1f073f15c2239c2083f71fa8a75cd71c12b0486022c5f7a226af4"
 
       define_method(:install) do
         bin.install "forge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/samahlstrom/forge-cli/releases/download/v0.2.26/forge_0.2.26_darwin_arm64.tar.gz"
-      sha256 "932375964dcdff6ae69291e684c890cb0fc3caa9befdfc1c91e9b558c2112c9f"
+      url "https://github.com/samahlstrom/forge-cli/releases/download/v0.2.27/forge_0.2.27_darwin_arm64.tar.gz"
+      sha256 "236205422750b856af25e6b09768ad1458bcf564abb9759f25709e9c26c30f95"
 
       define_method(:install) do
         bin.install "forge"
@@ -28,15 +28,15 @@ class Forge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samahlstrom/forge-cli/releases/download/v0.2.26/forge_0.2.26_linux_amd64.tar.gz"
-      sha256 "e45eb5df3ed8fa470ed9e44fe2c38a62a013a4bf9b24404bf4234d83de037ff6"
+      url "https://github.com/samahlstrom/forge-cli/releases/download/v0.2.27/forge_0.2.27_linux_amd64.tar.gz"
+      sha256 "fbee0ede07355a1c69bc93dfc49f7e140fb4b310e98af4549936f5a3b8426af9"
       define_method(:install) do
         bin.install "forge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samahlstrom/forge-cli/releases/download/v0.2.26/forge_0.2.26_linux_arm64.tar.gz"
-      sha256 "9feab4d7b2f31520759a9d41a6f9ac40c476bd27efe7ec3f5b33189ca7276961"
+      url "https://github.com/samahlstrom/forge-cli/releases/download/v0.2.27/forge_0.2.27_linux_arm64.tar.gz"
+      sha256 "a2e5955d81f5e3832dc87c5c21e7dfb2ef5b0f30c8cc3f85cf369012f542aeb2"
       define_method(:install) do
         bin.install "forge"
       end
