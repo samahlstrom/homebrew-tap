@@ -5,20 +5,20 @@
 class Forge < Formula
   desc "Portable AI agent toolkit for Claude Code"
   homepage "https://github.com/samahlstrom/forge-cli"
-  version "0.3.4"
+  version "0.3.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/samahlstrom/forge-cli/releases/download/v0.3.4/forge_0.3.4_darwin_amd64.tar.gz"
-      sha256 "98f89a2d74780e2409be92458c5c61b893846fdcea8ed5efea8dc2faf405d337"
+      url "https://github.com/samahlstrom/forge-cli/releases/download/v0.3.5/forge_0.3.5_darwin_amd64.tar.gz"
+      sha256 "e0200ac63431e532cd94d7ba3cc63c324a24522803bc0b0ee57abd0687d15e85"
 
       define_method(:install) do
         bin.install "forge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/samahlstrom/forge-cli/releases/download/v0.3.4/forge_0.3.4_darwin_arm64.tar.gz"
-      sha256 "be6d1108e811b4c25a60bdf84a7f1f42abb5e26d6d3eba25ae359217e2f111a5"
+      url "https://github.com/samahlstrom/forge-cli/releases/download/v0.3.5/forge_0.3.5_darwin_arm64.tar.gz"
+      sha256 "93d2e9a78830f6a97d1dc32f19c32f81fe09275f5f810abebf7c0ee05c76005c"
 
       define_method(:install) do
         bin.install "forge"
@@ -28,15 +28,15 @@ class Forge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samahlstrom/forge-cli/releases/download/v0.3.4/forge_0.3.4_linux_amd64.tar.gz"
-      sha256 "16dbdef607ca3e5a9e04cc44d0cdda8827c5306d11b46356d1442794b98d495d"
+      url "https://github.com/samahlstrom/forge-cli/releases/download/v0.3.5/forge_0.3.5_linux_amd64.tar.gz"
+      sha256 "25729048b0c49e10f760927e94e152fe2c54317aafceacad514fdabec72f8314"
       define_method(:install) do
         bin.install "forge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samahlstrom/forge-cli/releases/download/v0.3.4/forge_0.3.4_linux_arm64.tar.gz"
-      sha256 "858c44030b67071960112e265ba55deb0933a901e463580ff9e6327d4767a036"
+      url "https://github.com/samahlstrom/forge-cli/releases/download/v0.3.5/forge_0.3.5_linux_arm64.tar.gz"
+      sha256 "353fbe14d928dae5c7b20cfd9339b0c6c36b3856e1ef9cba662dffc2c04a15ba"
       define_method(:install) do
         bin.install "forge"
       end
